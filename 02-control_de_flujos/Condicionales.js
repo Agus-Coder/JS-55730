@@ -11,22 +11,28 @@ let verdadero = true;
 let falso = false;
 
 
+  
 
 // ------ Estructura IF ------ //
-
-/*
 
 if (condicion){
     // Codigo a ejecutar si "condicion" es verdadera
     // Si "condicion" es falsa, entonces no se ejecuta
 }
 
-*/
+
 
 // Ejemplo
 
-let frio = false;
 
+
+// Si es un dia de calor
+if (calor) {
+  console.log("Este codigo se ejecuta! Y decimos: ");
+  console.log("Apaguen la calefacción! Me estoy asando!");
+}
+
+// Si es un dia frio
 if (frio) {
   console.log("Este codigo se ejecuta! Y decimos: ");
   console.log("Enciendan la calefacción! ");
@@ -34,16 +40,21 @@ if (frio) {
 
 
 
+
 // ------ Operadores de comparacion ------ //
 
 let botonLuz = "Encendido";
 
-//console.log(botonLuz == "Apagado");
-//console.log(botonLuz == "Encendido");
+console.log(botonLuz === "Apagado");
+console.log(botonLuz == "Encendido");
+
+/* Escribir codigo junto a los alumnos */
+
 
 
 
 // ------ Multiples If else ------ //
+
 
 if (frio) {
   console.log("Este codigo se ejecuta! Y decimos: ");
@@ -54,13 +65,20 @@ if (frio) {
 
 
 
+
 // ------  if else if ------ //
 
+
+
 if (frio) {
+
   console.log("Este codigo se ejecuta! Y decimos: ");
   console.log("Enciendan la calefacción! ");
-} else if (calor) {
-  console.log("Nop, no hace frio, y ademas, hace calor");
+
+  if (calor){
+    console.log("Tengo fiebre ");
+  }
+
 }
 
 
@@ -81,7 +99,7 @@ let galaxia = 33 < 7;
 if (galaxia) {
   console.log("LA TIERRA ES PLANA!");
 } else if (universo) {
-  console.log("Nop, la tierra es esférica");
+  console.log("Nop, la tierra es casi esférica");
 }
 
 
@@ -91,26 +109,48 @@ if (galaxia) {
 // tengo vacaciones y tengo ahorros?
 // Entonces: Me voy de viaje: Si? No?
 
-let pruebaDeVerdad_1 = verdadero && falso;
-console.log(pruebaDeVerdad_1);
+let voyAViajar
 
-let pruebaDeVerdad_2 = verdadero && verdadero;
-console.log(pruebaDeVerdad_2);
+let tengoVacaciones = true
+let notengoVacaciones = false
 
-let pruebaDeVerdad_3 = falso && verdadero;
-console.log(pruebaDeVerdad_3);
+let tengoAhorros = true
+let notengoAhorros = false
+
+voyAViajar = tengoVacaciones && tengoAhorros;
+console.log(voyAViajar);
+
+voyAViajar = notengoVacaciones && tengoAhorros;
+console.log(voyAViajar);
+
+voyAViajar = notengoVacaciones && notengoAhorros;
+console.log(voyAViajar);
+
+
+
 
 // Tengo chocolate o helado?
 // Tengo entonces postre?
 
-let pruebaDeVerdad_4 = verdadero || verdadero;
-console.log(pruebaDeVerdad_4);
+let comemosPostre
 
-let pruebaDeVerdad_5 = verdadero || falso;
-console.log(pruebaDeVerdad_5);
+let tengoChocolate = true
+let notengoChocolate = false
 
-let pruebaDeVerdad_6 = falso || falso;
-console.log(pruebaDeVerdad_6);
+let tengoHelado = true
+let notengoHelado = false
+
+comemosPostre = tengoChocolate || notengoHelado;
+console.log(comemosPostre);
+
+comemosPostre = notengoChocolate || tengoHelado;
+console.log(comemosPostre);
+
+comemosPostre = notengoChocolate || notengoHelado;
+console.log(comemosPostre);
+
+
+
 
 
 
@@ -122,9 +162,12 @@ console.log(pruebaDeVerdad_6);
 let manzana = "manzana"
 let zanahoria = "zanahoria"
 
-console.log(manzana =! zanahoria); // Verdadero
+console.log(manzana != zanahoria); // Verdadero
 
 // Ejemplo con frio y calor
+
+let frio = false;
+let calor = false;
 
 if (frio != true && calor == true) {
   console.log("Encendamos el ventilador!");

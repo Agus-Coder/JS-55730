@@ -21,9 +21,14 @@ let areaPared = alto*ancho
 let todasLasAreas = areaPared*4
 let total = todasLasAreas*precioPintura
 
-
+console.log("Esto que estoy escribiendo lo vamos a ver en la consola")
+console.log(total)
 
 // ------ Otros Ejemplos ------ //
 let name = "Pintadores"
 let adj = "Espaciales"
 const espacio = " "
+
+let oracion = name + espacio + adj
+
+console.log(oracion)

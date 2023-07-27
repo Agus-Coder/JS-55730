@@ -1,13 +1,24 @@
 // ------ Console log ------ //
 
-console.log("Exito!");
+console.log("Exito!")
+
+console.log("Jonatan")
+
 
 // ------ Alert ------ //
 
-alert("Exito 2!")
+// alert("Ganaste 2 millones de USD")
+
+
+// alert("Hola! Mi nombre es Constanza")
+
+
+
 
 // ------ Prompt ------ //
 
-let example = prompt("Ingrese un dato o valor!")
+let example = prompt("Ingrese su nombre")
 
-console.log(example);
+// console.log(example);
+
+alert("Hola! Tu nombre es: " + example)
